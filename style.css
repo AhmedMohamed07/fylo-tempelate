@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('./images/bg-desktop.png') center center fixed no-repeat;
+  background-size: cover;
+  font-family: 'Raleway';
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  column-gap: 3rem;
+  color: white;
+  align-items: end;
+}
+
+.first {
+  background-color: hsl(228, 56%, 26%);
+  padding: 2rem 7rem 2rem 2rem;
+  border-radius: 1rem;
+  border-top-right-radius: 4rem;
+}
+
+.head {
+  margin-bottom: 2rem;
+}
+.bottom {
+  column-gap: 1rem;
+  display: flex;
+}
+.bottom svg {
+  background-color: hsl(229, 57%, 11%);
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  height: 1.5rem;
+}
+.second {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.giga {
+  position: absolute;
+  top: -1rem;
+  right: 54px;
+  color: hsl(229, 57%, 11%);
+  background-color: white;
+  display: flex;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.giga::after {
+  content: '';
+  position: absolute;
+  border: 15px solid;
+  border-color: white white transparent transparent;
+  right: 0;
+  bottom: -20px;
+}
+.numbers {
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.gb {
+  font-size: 0.7rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+  color: hsl(229, 7%, 55%);
+  letter-spacing: 1.5px;
+}
+.paragraph {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.paragraph span {
+  font-weight: bold;
+}
+
+.box {
+  background-color: hsl(229, 57%, 15%);
+  width: 400px;
+  height: 20px;
+  border-radius: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.pecentage {
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  width: 70%;
+  height: 14px;
+  border-radius: 1rem;
+  margin: auto 0 auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.num-gb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    column-gap: 1.5rem;
+  }
+  .first {
+    padding-right: 4rem;
+  }
+  .second {
+    padding: 2rem;
+  }
+  .box {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .container {
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: baseline;
+  }
+
+  .first {
+    padding-right: 8rem;
+    padding-left: 3rem;
+  }
+  .bottom svg {
+    padding: 0.9rem;
+  }
+  .giga {
+    top: unset;
+    bottom: -1rem;
+    right: 90px;
+  }
+  .numbers {
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
+  }
+  .gb {
+    padding-right: 1rem;
+  }
+  .giga::after {
+    border: none;
+  }
+  .paragraph {
+    text-align: center;
+  }
+  .num-gb {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}
